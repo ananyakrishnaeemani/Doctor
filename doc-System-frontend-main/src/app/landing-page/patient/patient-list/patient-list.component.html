@@ -2,7 +2,7 @@
   <div class="container-fluid heading mt-4">
     <h1>Patient List</h1>
     <button routerLink="/landing-page/create-patient" class="btn btn-primary myBtn">
-      Add Patient
+      Patient
     </button>
   </div>
   
@@ -17,7 +17,7 @@
         <p class="card-text docInfo"><i class="iconColor bi bi-droplet-fill"></i> {{ user.bloodGroup | uppercase}}</p>
         <p class="card-text docInfo"><i class="iconColor bi bi-gender-ambiguous"></i> {{ user.gender}}</p>
         <div class="optionsL">
-          <p class="cLink" (click) = "updatePatient(user.patientId)">Update</p>
+          <p class="cLink" (click) = "updatePatient(user.patientId)" *ngIf="isadmin">Update</p>
           <!-- <p class="cLink" (click) = "deletePatient(user.patientId)"*ngIf="isadmin">Delete</p> -->
         </div>
       </div>
