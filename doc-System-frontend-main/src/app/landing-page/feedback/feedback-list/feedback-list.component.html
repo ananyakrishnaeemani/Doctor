@@ -29,7 +29,7 @@
     </div>
 
     <div class="feedback-actions">
-      <button (click)="updateFeedback(feedback.feedbackId)" class="btn btn-info" *ngIf="ispatient||isadmin">Update</button>
+      <button (click)="updateFeedback(feedback.feedbackId)" class="btn btn-info" *ngIf="isadmin">Update</button>
       <button (click)="deleteFeedback(feedback.feedbackId)" class="btn btn-danger ml-2" *ngIf="isadmin">Delete</button>
     </div>
   </div>
