@@ -2,7 +2,7 @@
   <div class="container-fluid heading mt-4">
     <h1>Doctor List</h1>
     <button routerLink="/landing-page/create-doctor" class="btn btn-primary myBtn" *ngIf="isdoctor||isadmin">
-      Add Doctor
+      Doctor
     </button>
   </div>
   
@@ -17,7 +17,7 @@
         <p class="card-text docInfo"><i class="iconColor bi bi-telephone-fill"></i> {{ user.mobileNo }}</p>
         <p class="card-text docInfo"><i class="iconColor bi bi-envelope-at-fill"></i> {{ user.email }}</p>
         <div class="optionsL">
-          <p class="cLink" (click) = "updateDoctor(user.doctorId)" *ngIf="isdoctor||isadmin">Update</p>
+          <p class="cLink" (click) = "updateDoctor(user.doctorId)" *ngIf="isadmin">Update</p>
           <!-- <p class="cLink" (click) = "deleteDoctor(user.doctorId)" *ngIf="isadmin">Delete</p> -->
         </div>
       </div>
