@@ -32,12 +32,12 @@ The e-Doctor Appointment System is a user-friendly web application designed to s
   1.	Clone the repository:
   -	git clone https://github.com/ananyakrishnaeemani/Doctor.git
   2.	Set up the Frontend:
-      -	cd frontend
-      -	npm install
-      -	in case of issue with angular version: 
-      -	set NODE_OPTIONS=--openssl-legacy-provider 
-      -	$env:NODE_OPTIONS="--openssl-legacy-provider"
-      -	ng serve
+        -	cd frontend
+        -	npm install
+        -	in case of issue with angular version: 
+        -	set NODE_OPTIONS=--openssl-legacy-provider 
+        -	$env:NODE_OPTIONS="--openssl-legacy-provider"
+        -	ng serve
   Access the application at http://localhost:4200.
   3.	Set up the Backend:
     -	Import the Spring Boot project into your IDE (e.g., IntelliJ, Eclipse).
