@@ -33,6 +33,7 @@ The e-Doctor Appointment System is a user-friendly web application designed to s
   -	git clone https://github.com/ananyakrishnaeemani/Doctor.git
   2.	Set up the Frontend:
         -	cd frontend
+   	    - npm install -g @angular/cli.
         -	npm install
         -	in case of issue with angular version: 
         -	set NODE_OPTIONS=--openssl-legacy-provider 
